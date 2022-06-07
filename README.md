@@ -6,13 +6,13 @@
 
 
 # 改动内容
-本质上ECharts是有一个官方实现的小程序版本的库的,地址为:[echarts-for-weixin]('https://github.com/ecomfe/echarts-for-weixin#%E6%9A%82%E4%B8%8D%E6%94%AF%E6%8C%81%E7%9A%84%E5%8A%9F%E8%83%BD'),但这个库仅支持原生微信的编写方式.当前仓库只是一个声明仓库.用于兼容remax与echarts的调用.
+本质上ECharts是有一个官方实现的小程序版本的库的,地址为:[echarts-for-weixin](https://github.com/ecomfe/echarts-for-weixin#%E6%9A%82%E4%B8%8D%E6%94%AF%E6%8C%81%E7%9A%84%E5%8A%9F%E8%83%BD),但这个库仅支持原生微信的编写方式.当前仓库只是一个声明仓库.用于兼容remax与echarts的调用.
 
 本次改动是分离了强依赖,也就是该仓库不会强制发包到NPM仓. 
 另外当前设计不依赖于具体的remax版本.echart也在尽可能的向官方最新版对齐.
 
 初衷是为了兼容echarts的图表可定制性(官网可以根据选择生成只包含某几个chart的JS).
-官方地址为:[echarts.apache.org]('https://echarts.apache.org/zh/builder.html')
+官方地址为:[echarts.apache.org](https://echarts.apache.org/zh/builder.html)
 
 因为小程序的特殊性,依赖组件的大小是一个强需求,特此采取该方案.
 
