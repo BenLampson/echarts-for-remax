@@ -33,6 +33,7 @@ export default class ChartCanvas {
   setChart(chart: echarts.ECharts) {
     this.chart = chart
   }
+  addEventListener () {}
 
   attachEvent() {
     // noop

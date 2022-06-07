@@ -1,8 +1,8 @@
 import * as React from 'react'
 import BaseChart, { BaseChartProps, BaseChartType } from './BaseChart'
 
-export interface RemaxChartProps extends Omit<BaseChartProps, 'type' | 'container'> {}
-const RemaxChart = (props: RemaxChartProps) => {
+export interface EChart4RemaxProps extends Omit<BaseChartProps, 'type' | 'container'> {}
+const EChart4Remax = (props: EChart4RemaxProps) => {
   if (process.env.REMAX_PLATFORM === 'wechat') {
     const { Canvas } = require('remax/wechat')
     return <BaseChart type={BaseChartType.CANVAS_2D} container={Canvas} {...props} />
@@ -21,4 +21,4 @@ const RemaxChart = (props: RemaxChartProps) => {
   return <BaseChart {...props} />
 }
 
-export default RemaxChart
+export default EChart4Remax
